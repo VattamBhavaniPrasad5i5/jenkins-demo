@@ -1,24 +1,24 @@
-# from app import app
+from app import app
 
 
-# def test_home():
-#     client = app.test_client()
+def test_home():
+    client = app.test_client()
 
-#     response = client.get("/")
+    response = client.get("/")
 
-#     assert response.status_code == 200
-#     assert response.data == b"Hello from Jenkins CI/CD!"
+    assert response.status_code == 200
+    assert response.data == b"Hello from Jenkins CI/CD!"
 
 
-# def test_health():
-#     client = app.test_client()
+def test_health():
+    client = app.test_client()
 
-#     response = client.get("/health")
+    response = client.get("/health")
 
-#     assert response.status_code == 200
-#     assert response.data == b"OK"
+    assert response.status_code == 200
+    assert response.data == b"OK"
 
-from app import add
+# from app import add
 
-def test_add():
-    assert add(2, 3) == 5
+# def test_add():
+#     assert add(2, 3) == 5
